@@ -1,0 +1,632 @@
+examples/dynamic-od/app/clock_app.c:39:15: style: The scope of the variable 'od_sec' can be reduced. [variableScope]
+    CO_OBJ   *od_sec;
+              ^
+examples/dynamic-od/app/clock_app.c:40:15: style: The scope of the variable 'od_min' can be reduced. [variableScope]
+    CO_OBJ   *od_min;
+              ^
+examples/dynamic-od/app/clock_app.c:41:15: style: The scope of the variable 'od_hr' can be reduced. [variableScope]
+    CO_OBJ   *od_hr;
+              ^
+examples/dynamic-od/driver/drv_can_sim.c:119:19: style: The scope of the variable 'byte' can be reduced. [variableScope]
+    uint8_t       byte;
+                  ^
+examples/dynamic-od/driver/drv_can_sim.c:153:19: style: The scope of the variable 'byte' can be reduced. [variableScope]
+    uint8_t       byte;
+                  ^
+examples/dynamic-od/driver/drv_can_sim.c:205:21: style: The scope of the variable 'frm' can be reduced. [variableScope]
+    CO_IF_FRM      *frm;
+                    ^
+examples/quickstart/app/clock_app.c:39:15: style: The scope of the variable 'od_sec' can be reduced. [variableScope]
+    CO_OBJ   *od_sec;
+              ^
+examples/quickstart/app/clock_app.c:40:15: style: The scope of the variable 'od_min' can be reduced. [variableScope]
+    CO_OBJ   *od_min;
+              ^
+examples/quickstart/app/clock_app.c:41:15: style: The scope of the variable 'od_hr' can be reduced. [variableScope]
+    CO_OBJ   *od_hr;
+              ^
+examples/quickstart/driver/drv_can_sim.c:119:19: style: The scope of the variable 'byte' can be reduced. [variableScope]
+    uint8_t       byte;
+                  ^
+examples/quickstart/driver/drv_can_sim.c:153:19: style: The scope of the variable 'byte' can be reduced. [variableScope]
+    uint8_t       byte;
+                  ^
+examples/quickstart/driver/drv_can_sim.c:205:21: style: The scope of the variable 'frm' can be reduced. [variableScope]
+    CO_IF_FRM      *frm;
+                    ^
+src/config/callbacks.c:39:21: style: Condition 'debugExit==0u' is always true [knownConditionTrueFalse]
+    for (;debugExit == 0u;);
+                    ^
+src/config/callbacks.c:33:34: note: Assignment 'debugExit=0u', assigned value is 0
+    volatile uint8_t debugExit = 0u;
+                                 ^
+src/config/callbacks.c:39:21: note: Condition 'debugExit==0u' is always true
+    for (;debugExit == 0u;);
+                    ^
+src/core/co_dict.c:37:14: style: The scope of the variable 'center' can be reduced. [variableScope]
+    int32_t  center;
+             ^
+src/core/co_dict.c:64:14: style: The scope of the variable 'sz' can be reduced. [variableScope]
+    uint32_t sz;
+             ^
+src/core/co_dict.c:85:14: style: The scope of the variable 'sz' can be reduced. [variableScope]
+    uint32_t sz;
+             ^
+src/core/co_dict.c:105:14: style: The scope of the variable 'sz' can be reduced. [variableScope]
+    uint32_t sz;
+             ^
+src/core/co_dict.c:127:14: style: The scope of the variable 'sz' can be reduced. [variableScope]
+    uint32_t sz;
+             ^
+src/core/co_dict.c:147:14: style: The scope of the variable 'sz' can be reduced. [variableScope]
+    uint32_t sz;
+             ^
+src/core/co_dict.c:167:14: style: The scope of the variable 'sz' can be reduced. [variableScope]
+    uint32_t sz;
+             ^
+src/core/co_obj.c:59:96: style:inconclusive: Function 'COObjRdBufStart' argument 4 names different: declaration 'len' definition 'size'. [funcArgNamesDifferent]
+CO_ERR COObjRdBufStart(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                               ^
+src/core/co_obj.h:349:87: note: Function 'COObjRdBufStart' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjRdBufStart(CO_OBJ *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t len);
+                                                                                      ^
+src/core/co_obj.c:59:96: note: Function 'COObjRdBufStart' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjRdBufStart(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                               ^
+src/core/co_obj.c:77:95: style:inconclusive: Function 'COObjRdBufCont' argument 4 names different: declaration 'len' definition 'size'. [funcArgNamesDifferent]
+CO_ERR COObjRdBufCont(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                              ^
+src/core/co_obj.h:372:86: note: Function 'COObjRdBufCont' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjRdBufCont(CO_OBJ *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t len);
+                                                                                     ^
+src/core/co_obj.c:77:95: note: Function 'COObjRdBufCont' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjRdBufCont(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                              ^
+src/core/co_obj.c:94:96: style:inconclusive: Function 'COObjWrBufStart' argument 4 names different: declaration 'len' definition 'size'. [funcArgNamesDifferent]
+CO_ERR COObjWrBufStart(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                               ^
+src/core/co_obj.h:394:87: note: Function 'COObjWrBufStart' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjWrBufStart(CO_OBJ *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t len);
+                                                                                      ^
+src/core/co_obj.c:94:96: note: Function 'COObjWrBufStart' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjWrBufStart(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                               ^
+src/core/co_obj.c:112:95: style:inconclusive: Function 'COObjWrBufCont' argument 4 names different: declaration 'len' definition 'size'. [funcArgNamesDifferent]
+CO_ERR COObjWrBufCont(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                              ^
+src/core/co_obj.h:417:86: note: Function 'COObjWrBufCont' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjWrBufCont(CO_OBJ *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t len);
+                                                                                     ^
+src/core/co_obj.c:112:95: note: Function 'COObjWrBufCont' argument 4 names different: declaration 'len' definition 'size'.
+CO_ERR COObjWrBufCont(struct CO_OBJ_T *obj, struct CO_NODE_T *node, uint8_t *buffer, uint32_t size)
+                                                                                              ^
+src/core/co_tmr.c:59:17: style: The scope of the variable 'pdo' can be reduced. [variableScope]
+    CO_TPDO    *pdo;
+                ^
+src/core/co_tmr.c:413:18: style: The scope of the variable 'dTx' can be reduced. [variableScope]
+    uint32_t     dTx;
+                 ^
+src/object/basic/co_integer16.c:94:14: style: The scope of the variable 'oldValue' can be reduced. [variableScope]
+    uint16_t oldValue;
+             ^
+src/object/basic/co_integer32.c:94:14: style: The scope of the variable 'oldValue' can be reduced. [variableScope]
+    uint32_t oldValue;
+             ^
+src/object/basic/co_integer8.c:94:13: style: The scope of the variable 'oldValue' can be reduced. [variableScope]
+    uint8_t oldValue;
+            ^
+src/object/cia301/co_emcy_hist.c:104:14: style: The scope of the variable 'emcy' can be reduced. [variableScope]
+    CO_EMCY *emcy;
+             ^
+src/object/cia301/co_emcy_hist.c:105:14: style: The scope of the variable 'value' can be reduced. [variableScope]
+    uint8_t  value;
+             ^
+src/object/cia301/co_emcy_hist.c:128:14: style: The scope of the variable 'emcy' can be reduced. [variableScope]
+    CO_EMCY *emcy;
+             ^
+src/object/cia301/co_emcy_hist.c:129:14: style: The scope of the variable 'subobj' can be reduced. [variableScope]
+    CO_OBJ  *subobj;
+             ^
+src/object/cia301/co_emcy_hist.c:130:14: style: The scope of the variable 'cod' can be reduced. [variableScope]
+    CO_DICT *cod;
+             ^
+src/object/cia301/co_emcy_hist.c:131:14: style: The scope of the variable 'sub' can be reduced. [variableScope]
+    uint8_t  sub;
+             ^
+src/object/cia301/co_emcy_hist.c:101:84: style:inconclusive: Function 'COTEmcyHistWrite' argument 3 names different: declaration 'buffer' definition 'val'. [funcArgNamesDifferent]
+static CO_ERR COTEmcyHistWrite(struct CO_OBJ_T *obj, struct CO_NODE_T *node, void *val, uint32_t size)
+                                                                                   ^
+src/object/cia301/co_emcy_hist.c:37:86: note: Function 'COTEmcyHistWrite' argument 3 names different: declaration 'buffer' definition 'val'.
+static CO_ERR   COTEmcyHistWrite(struct CO_OBJ_T *obj, struct CO_NODE_T *node, void *buffer, uint32_t size);
+                                                                                     ^
+src/object/cia301/co_emcy_hist.c:101:84: note: Function 'COTEmcyHistWrite' argument 3 names different: declaration 'buffer' definition 'val'.
+static CO_ERR COTEmcyHistWrite(struct CO_OBJ_T *obj, struct CO_NODE_T *node, void *val, uint32_t size)
+                                                                                   ^
+src/object/cia301/co_hb_cons.c:77:16: style: The scope of the variable 'hbc' can be reduced. [variableScope]
+    CO_HBCONS *hbc;
+               ^
+src/object/cia301/co_hb_cons.c:78:16: style: The scope of the variable 'value' can be reduced. [variableScope]
+    uint32_t   value;
+               ^
+src/object/cia301/co_hb_cons.c:125:16: style: The scope of the variable 'hbc' can be reduced. [variableScope]
+    CO_HBCONS *hbc;
+               ^
+src/object/cia301/co_hb_cons.c:168:17: style: The scope of the variable 'err' can be reduced. [variableScope]
+    int16_t     err;
+                ^
+src/object/cia301/co_hb_cons.c:101:24: style: Variable 'value' is assigned a value that is never used. [unreadVariable]
+    uint32_t    value  = 0;
+                       ^
+src/object/cia301/co_hb_prod.c:78:15: style: The scope of the variable 'tmr' can be reduced. [variableScope]
+    CO_TMR   *tmr;
+              ^
+src/object/cia301/co_hb_prod.c:79:15: style: The scope of the variable 'nmt' can be reduced. [variableScope]
+    CO_NMT   *nmt;
+              ^
+src/object/cia301/co_hb_prod.c:80:15: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t  ticks;
+              ^
+src/object/cia301/co_hb_prod.c:82:15: style: The scope of the variable 'tid' can be reduced. [variableScope]
+    int16_t   tid;
+              ^
+src/object/cia301/co_hb_prod.c:125:14: style: The scope of the variable 'nmt' can be reduced. [variableScope]
+    CO_NMT  *nmt;
+             ^
+src/object/cia301/co_hb_prod.c:126:14: style: The scope of the variable 'tmr' can be reduced. [variableScope]
+    CO_TMR  *tmr;
+             ^
+src/object/cia301/co_hb_prod.c:127:14: style: The scope of the variable 'tid' can be reduced. [variableScope]
+    int16_t  tid;
+             ^
+src/object/cia301/co_hb_prod.c:129:14: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t ticks;
+             ^
+src/object/cia301/co_para_restore.c:68:14: style: The scope of the variable 'pg' can be reduced. [variableScope]
+    CO_PARA *pg;
+             ^
+src/object/cia301/co_para_restore.c:92:15: style: The scope of the variable 'cod' can be reduced. [variableScope]
+    CO_DICT  *cod;
+              ^
+src/object/cia301/co_para_restore.c:93:15: style: The scope of the variable 'pwo' can be reduced. [variableScope]
+    CO_OBJ   *pwo;
+              ^
+src/object/cia301/co_para_restore.c:94:15: style: The scope of the variable 'pg' can be reduced. [variableScope]
+    CO_PARA  *pg;
+              ^
+src/object/cia301/co_para_restore.c:95:15: style: The scope of the variable 'value' can be reduced. [variableScope]
+    uint32_t  value;
+              ^
+src/object/cia301/co_para_restore.c:97:15: style: The scope of the variable 'sub' can be reduced. [variableScope]
+    uint8_t   sub;
+              ^
+src/object/cia301/co_para_restore.c:167:13: style: The scope of the variable 'err' can be reduced. [variableScope]
+    int16_t err;
+            ^
+src/object/cia301/co_para_store.c:89:15: style: The scope of the variable 'cod' can be reduced. [variableScope]
+    CO_DICT  *cod;
+              ^
+src/object/cia301/co_para_store.c:90:15: style: The scope of the variable 'pwo' can be reduced. [variableScope]
+    CO_OBJ   *pwo;
+              ^
+src/object/cia301/co_para_store.c:91:15: style: The scope of the variable 'pg' can be reduced. [variableScope]
+    CO_PARA  *pg;
+              ^
+src/object/cia301/co_para_store.c:92:15: style: The scope of the variable 'value' can be reduced. [variableScope]
+    uint32_t  value;
+              ^
+src/object/cia301/co_para_store.c:94:15: style: The scope of the variable 'sub' can be reduced. [variableScope]
+    uint8_t   sub;
+              ^
+src/object/cia301/co_para_store.c:192:15: style: The scope of the variable 'obj' can be reduced. [variableScope]
+    CO_OBJ   *obj;
+              ^
+src/object/cia301/co_para_store.c:232:14: style: The scope of the variable 'bytes' can be reduced. [variableScope]
+    uint32_t bytes;
+             ^
+src/object/cia301/co_pdo_event.c:68:15: style: The scope of the variable 'nmt' can be reduced. [variableScope]
+    CO_NMT   *nmt;
+              ^
+src/object/cia301/co_pdo_event.c:72:15: style: The scope of the variable 'cycTime' can be reduced. [variableScope]
+    uint16_t  cycTime;
+              ^
+src/object/cia301/co_sync_cycle.c:82:12: style: Variable 'result' is reassigned a value before the old one has been used. [redundantAssignment]
+    result = uint32->Write(obj, node, &nus, sizeof(nus));
+           ^
+src/object/cia301/co_sync_cycle.c:71:13: note: result is assigned
+    result  = CO_ERR_NONE;
+            ^
+src/object/cia301/co_sync_cycle.c:82:12: note: result is overwritten
+    result = uint32->Write(obj, node, &nus, sizeof(nus));
+           ^
+src/object/cia301/co_sync_id.c:138:14: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t ticks, time;
+             ^
+src/object/cia301/co_sync_id.c:141:14: style: The scope of the variable 'tid' can be reduced. [variableScope]
+    int16_t  tid;
+             ^
+src/object/cia301/co_sync_id.c:204:13: style: The scope of the variable 'tid' can be reduced. [variableScope]
+    int16_t tid;
+            ^
+src/service/cia301/co_csdo.c:69:14: style: The scope of the variable 'tid' can be reduced. [variableScope]
+    int16_t  tid;
+             ^
+src/service/cia301/co_csdo.c:149:24: style: The scope of the variable 'idx' can be reduced. [variableScope]
+    uint16_t           idx;
+                       ^
+src/service/cia301/co_csdo.c:150:24: style: The scope of the variable 'sub' can be reduced. [variableScope]
+    uint8_t            sub;
+                       ^
+src/service/cia301/co_csdo.c:151:24: style: The scope of the variable 'code' can be reduced. [variableScope]
+    uint32_t           code;
+                       ^
+src/service/cia301/co_csdo.c:201:13: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t n;
+            ^
+src/service/cia301/co_csdo.c:228:15: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t  ticks;
+              ^
+src/service/cia301/co_csdo.c:269:15: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t  ticks;
+              ^
+src/service/cia301/co_csdo.c:271:15: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t   n;
+              ^
+src/service/cia301/co_csdo.c:318:15: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t  ticks;
+              ^
+src/service/cia301/co_csdo.c:321:15: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t   n;
+              ^
+src/service/cia301/co_csdo.c:322:15: style: The scope of the variable 'width' can be reduced. [variableScope]
+    uint8_t   width;
+              ^
+src/service/cia301/co_csdo.c:323:15: style: The scope of the variable 'c_bit' can be reduced. [variableScope]
+    uint8_t   c_bit = 1;
+              ^
+src/service/cia301/co_csdo.c:324:15: style: The scope of the variable 'cmd' can be reduced. [variableScope]
+    uint8_t   cmd;
+              ^
+src/service/cia301/co_csdo.c:370:15: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+    uint32_t  ticks;
+              ^
+src/service/cia301/co_csdo.c:372:15: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t   n;
+              ^
+src/service/cia301/co_csdo.c:373:15: style: The scope of the variable 'width' can be reduced. [variableScope]
+    uint8_t   width;
+              ^
+src/service/cia301/co_csdo.c:374:15: style: The scope of the variable 'c_bit' can be reduced. [variableScope]
+    uint8_t   c_bit = 1;
+              ^
+src/service/cia301/co_csdo.c:444:14: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t  n;
+             ^
+src/service/cia301/co_csdo.c:485:14: style: The scope of the variable 'index' can be reduced. [variableScope]
+    uint16_t index;
+             ^
+src/service/cia301/co_csdo.c:487:14: style: The scope of the variable 'sub' can be reduced. [variableScope]
+    uint8_t  sub;
+             ^
+src/service/cia301/co_csdo.c:634:15: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t   n;
+              ^
+src/service/cia301/co_csdo.c:635:15: style: The scope of the variable 'num' can be reduced. [variableScope]
+    uint32_t  num;
+              ^
+src/service/cia301/co_pdo.c:172:15: style: The scope of the variable 'size' can be reduced. [variableScope]
+    uint8_t   size;
+              ^
+src/service/cia301/co_pdo.c:271:16: style: The scope of the variable 'pdosz' can be reduced. [variableScope]
+    uint8_t    pdosz;
+               ^
+src/service/cia301/co_pdo.c:353:14: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint32_t n;
+             ^
+src/service/cia301/co_pdo.c:354:14: style: The scope of the variable 'num' can be reduced. [variableScope]
+    uint16_t num;
+             ^
+src/service/cia301/co_pdo.c:481:15: style: The scope of the variable 'link' can be reduced. [variableScope]
+    uint16_t  link;
+              ^
+src/service/cia301/co_pdo.c:486:15: style: The scope of the variable 'size' can be reduced. [variableScope]
+    uint8_t   size;
+              ^
+src/service/cia301/co_pdo.c:574:14: style: The scope of the variable 'obj' can be reduced. [variableScope]
+    CO_OBJ  *obj;
+             ^
+src/service/cia301/co_pdo.c:580:14: style: The scope of the variable 'pdosz' can be reduced. [variableScope]
+    uint8_t  pdosz;
+             ^
+src/service/cia301/co_pdo.c:351:29: style:inconclusive: Function 'COTPdoTrigObj' argument 1 names different: declaration 'tpdo' definition 'pdo'. [funcArgNamesDifferent]
+void COTPdoTrigObj(CO_TPDO *pdo, CO_OBJ *obj)
+                            ^
+src/service/cia301/co_pdo.h:232:29: note: Function 'COTPdoTrigObj' argument 1 names different: declaration 'tpdo' definition 'pdo'.
+void COTPdoTrigObj(CO_TPDO *tpdo, struct CO_OBJ_T *obj);
+                            ^
+src/service/cia301/co_pdo.c:351:29: note: Function 'COTPdoTrigObj' argument 1 names different: declaration 'tpdo' definition 'pdo'.
+void COTPdoTrigObj(CO_TPDO *pdo, CO_OBJ *obj)
+                            ^
+src/service/cia301/co_pdo.c:368:29: style:inconclusive: Function 'COTPdoTrigPdo' argument 1 names different: declaration 'tpdo' definition 'pdo'. [funcArgNamesDifferent]
+void COTPdoTrigPdo(CO_TPDO *pdo, uint16_t num)
+                            ^
+src/service/cia301/co_pdo.h:245:29: note: Function 'COTPdoTrigPdo' argument 1 names different: declaration 'tpdo' definition 'pdo'.
+void COTPdoTrigPdo(CO_TPDO *tpdo, uint16_t num);
+                            ^
+src/service/cia301/co_pdo.c:368:29: note: Function 'COTPdoTrigPdo' argument 1 names different: declaration 'tpdo' definition 'pdo'.
+void COTPdoTrigPdo(CO_TPDO *pdo, uint16_t num)
+                            ^
+src/service/cia301/co_ssdo.c:97:14: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t  n;
+             ^
+src/service/cia301/co_ssdo.c:610:14: style: The scope of the variable 'len' can be reduced. [variableScope]
+    uint32_t len;
+             ^
+src/service/cia301/co_ssdo.c:612:14: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t  n;
+             ^
+src/service/cia301/co_ssdo.c:641:14: style: The scope of the variable 'len' can be reduced. [variableScope]
+    uint32_t len;
+             ^
+src/service/cia301/co_ssdo.c:643:14: style: The scope of the variable 'i' can be reduced. [variableScope]
+    uint8_t  i;
+             ^
+src/service/cia301/co_ssdo.c:767:14: style: The scope of the variable 'size' can be reduced. [variableScope]
+    uint32_t size;
+             ^
+src/service/cia301/co_ssdo.c:769:14: style: The scope of the variable 'txNum' can be reduced. [variableScope]
+    uint32_t txNum;
+             ^
+src/service/cia301/co_ssdo.c:770:14: style: The scope of the variable 'byteOk' can be reduced. [variableScope]
+    uint32_t byteOk = 0;
+             ^
+src/service/cia301/co_ssdo.c:771:14: style: The scope of the variable 'txBuf' can be reduced. [variableScope]
+    uint8_t *txBuf;
+             ^
+src/service/cia301/co_ssdo.c:773:14: style: The scope of the variable 'seg' can be reduced. [variableScope]
+    uint8_t  seg;
+             ^
+src/service/cia301/co_ssdo.c:770:21: style: Variable 'byteOk' is assigned a value that is never used. [unreadVariable]
+    uint32_t byteOk = 0;
+                    ^
+src/service/cia301/co_sync.c:103:13: style: The scope of the variable 'i' can be reduced. [variableScope]
+    uint8_t i;
+            ^
+src/service/cia305/co_lss.c:71:15: style: The scope of the variable 'obj' can be reduced. [variableScope]
+    CO_OBJ   *obj;
+              ^
+src/service/cia305/co_lss.c:107:23: style: The scope of the variable 'sid' can be reduced. [variableScope]
+    uint8_t           sid;
+                      ^
+src/service/cia305/co_lss.c:108:23: style: The scope of the variable 'cmd' can be reduced. [variableScope]
+    uint8_t           cmd;
+                      ^
+tests/integration/app/app_env.c:352:13: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t n;
+            ^
+tests/integration/app/app_env.c:403:13: style: The scope of the variable 'n' can be reduced. [variableScope]
+    uint8_t n;
+            ^
+tests/integration/app/app_env.c:425:14: style: The scope of the variable 'elabsed' can be reduced. [variableScope]
+    int16_t  elabsed;
+             ^
+tests/integration/driver/drv_can_sim.c:119:19: style: The scope of the variable 'byte' can be reduced. [variableScope]
+    uint8_t       byte;
+                  ^
+tests/integration/driver/drv_can_sim.c:153:19: style: The scope of the variable 'byte' can be reduced. [variableScope]
+    uint8_t       byte;
+                  ^
+tests/integration/driver/drv_can_sim.c:205:21: style: The scope of the variable 'frm' can be reduced. [variableScope]
+    CO_IF_FRM      *frm;
+                    ^
+tests/integration/testfrm/ts_env.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+tests/integration/testfrm/ts_env.c:166:16: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+    uint16_t   cnt = 0u;
+               ^
+tests/integration/testfrm/ts_env.c:167:15: style: The scope of the variable 'path' can be reduced. [variableScope]
+    bool      path = false;
+              ^
+tests/integration/testfrm/ts_env.c:355:25: style:inconclusive: Function 'TS_Fail' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void TS_Fail(TS_LITERAL msg, TS_LINE line)
+                        ^
+tests/integration/testfrm/ts_env.h:383:25: note: Function 'TS_Fail' argument 1 names different: declaration 'message' definition 'msg'.
+void TS_Fail(TS_LITERAL message, TS_LINE line);
+                        ^
+tests/integration/testfrm/ts_env.c:355:25: note: Function 'TS_Fail' argument 1 names different: declaration 'message' definition 'msg'.
+void TS_Fail(TS_LITERAL msg, TS_LINE line)
+                        ^
+tests/integration/testfrm/ts_env.c:375:25: style:inconclusive: Function 'TS_Skip' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void TS_Skip(TS_LITERAL msg, TS_LINE line)
+                        ^
+tests/integration/testfrm/ts_env.h:398:25: note: Function 'TS_Skip' argument 1 names different: declaration 'message' definition 'msg'.
+void TS_Skip(TS_LITERAL message, TS_LINE line);
+                        ^
+tests/integration/testfrm/ts_env.c:375:25: note: Function 'TS_Skip' argument 1 names different: declaration 'message' definition 'msg'.
+void TS_Skip(TS_LITERAL msg, TS_LINE line)
+                        ^
+tests/integration/testfrm/ts_env.c:69:16: style: struct member 'TS_CURRENT_T::PassCnt' is never used. [unusedStructMember]
+    uint16_t   PassCnt;                               /*!< Number of passed tests                 */
+               ^
+tests/integration/testfrm/ts_env.c:523:17: error: Comparing pointers that point to different objects [comparePointers]
+    while (test < (const TS_INFOFUNC *)&TEST_SECTION_END) {
+                ^
+tests/integration/testfrm/ts_env.c:102:1: note: Variable declared here.
+TEST_SECTION_START_ALLOC
+^
+tests/integration/testfrm/ts_env.c:522:33: note: Address of variable taken here.
+    test = (const TS_INFOFUNC *)&TEST_SECTION_START;
+                                ^
+tests/integration/testfrm/ts_env.c:105:1: note: Variable declared here.
+TEST_SECTION_END_ALLOC
+^
+tests/integration/testfrm/ts_env.c:523:40: note: Address of variable taken here.
+    while (test < (const TS_INFOFUNC *)&TEST_SECTION_END) {
+                                       ^
+tests/integration/testfrm/ts_env.c:523:17: note: Comparing pointers that point to different objects
+    while (test < (const TS_INFOFUNC *)&TEST_SECTION_END) {
+                ^
+tests/integration/testfrm/ts_mem.c:295:9: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+        size--;
+        ^
+tests/integration/testfrm/ts_mem.c:194:14: style: The scope of the variable 'cf' can be reduced. [variableScope]
+    uint16_t cf;
+             ^
+tests/integration/testfrm/ts_mem.c:242:11: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+        c = TS_MEM_USED_P(c);
+          ^
+tests/integration/testfrm/ts_mem.c:294:13: style: Variable 'ptr8' is assigned a value that is never used. [unreadVariable]
+        ptr8++;
+            ^
+tests/integration/testfrm/ts_mem.c:295:13: style: Variable 'size' is assigned a value that is never used. [unreadVariable]
+        size--;
+            ^
+tests/integration/testfrm/ts_mem.c:93:14: style: Unused variable: bestSize [unusedVariable]
+    uint16_t bestSize;
+             ^
+tests/integration/testfrm/ts_mem.c:94:14: style: Unused variable: bestBlock [unusedVariable]
+    uint16_t bestBlock;
+             ^
+tests/integration/testfrm/ts_mem.h:110:0: error: syntax error [syntaxError]
+} STRUCT_PACKED_SUF TS_ID_LIST;
+^
+tests/integration/testfrm/ts_pipe.c:116:19: style: The scope of the variable 'pipe' can be reduced. [variableScope]
+    TS_PIPE      *pipe;
+                  ^
+tests/integration/testfrm/ts_pipe.c:223:20: style: The scope of the variable 'item' can be reduced. [variableScope]
+    TS_LIST_ITEM  *item;
+                   ^
+tests/integration/testfrm/ts_pipe.c:378:5: style: int result is returned as long value. If the return value is long to avoid loss of information, then you have loss of information. [truncLongCastReturn]
+    return (info.FreeBlocks * info.BlockSize);
+    ^
+tests/integration/testfrm/ts_printf.c:345:50: style:inconclusive: Function 'TS_PrintfInit' argument 2 names different: declaration 'function' definition 'func'. [funcArgNamesDifferent]
+TS_OUT_FUNC TS_PrintfInit(void *arg, TS_OUT_FUNC func)
+                                                 ^
+tests/integration/testfrm/ts_printf.h:89:51: note: Function 'TS_PrintfInit' argument 2 names different: declaration 'function' definition 'func'.
+TS_OUT_FUNC TS_PrintfInit (void *arg, TS_OUT_FUNC function);
+                                                  ^
+tests/integration/testfrm/ts_printf.c:345:50: note: Function 'TS_PrintfInit' argument 2 names different: declaration 'function' definition 'func'.
+TS_OUT_FUNC TS_PrintfInit(void *arg, TS_OUT_FUNC func)
+                                                 ^
+tests/integration/testfrm/ts_version.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+tests/integration/testfrm/ts_version.c:32:14: style: The scope of the variable 'next_divisor' can be reduced. [variableScope]
+    uint32_t next_divisor;
+             ^
+tests/integration/testfrm/ts_version.c:33:14: style: The scope of the variable 'divisor' can be reduced. [variableScope]
+    uint32_t divisor = 1u;
+             ^
+tests/integration/testfrm/ts_version.c:34:14: style: The scope of the variable 'fmt' can be reduced. [variableScope]
+    uint8_t  fmt     = 0u;
+             ^
+tests/integration/testfrm/ts_version.c:35:14: style: The scope of the variable 'digit' can be reduced. [variableScope]
+    uint8_t  digit;
+             ^
+tests/integration/testfrm/ts_version.c:36:14: style: The scope of the variable 'last' can be reduced. [variableScope]
+    char     last;
+             ^
+tests/integration/tests/pdo_dyn.c:527:14: style: Unused variable: result [unusedVariable]
+    int16_t  result;
+             ^
+tests/unit/object/basic/co_domain/main.c:231:23: style: Variable 'var' is assigned a value that is never used. [unreadVariable]
+    uint8_t    var[8] = { 1,2,3,4,5,6,7,8 };
+                      ^
+tests/unit/object/cia301/co_emcy_hist/main.c:280:22: style: Argument 'data8=1' to function TEST_CHECK is always 1. It does not matter what value 'data8' has. [knownArgument]
+    TEST_CHECK(data8 = 1);
+                     ^
+tests/unit/object/cia301/co_emcy_hist/main.c:281:23: style: Argument 'data32=0x11223344' to function TEST_CHECK is always 287454020. It does not matter what value 'data32' has. [knownArgument]
+    TEST_CHECK(data32 = 0x11223344);
+                      ^
+tests/unit/object/cia301/co_hb_prod/main.c:241:19: style: Variable 'val' is assigned a value that is never used. [unreadVariable]
+    uint16_t val  = 0;
+                  ^
+tests/unit/object/cia301/co_sync_cycle/main.c:211:19: style: Variable 'val' is assigned a value that is never used. [unreadVariable]
+    uint32_t val  = 0;
+                  ^
+src/core/co_dict.c:184:0: style: The function 'CODictRdBuffer' is never used. [unusedFunction]
+
+^
+src/core/co_dict.c:199:0: style: The function 'CODictWrBuffer' is never used. [unusedFunction]
+
+^
+src/core/co_core.c:89:0: style: The function 'CONodeStop' is never used. [unusedFunction]
+
+^
+src/service/cia301/co_sync.c:116:0: style: The function 'COSyncRestart' is never used. [unusedFunction]
+
+^
+src/core/co_ver.c:83:0: style: The function 'COVersion' is never used. [unusedFunction]
+
+^
+tests/integration/app/app_dict.c:142:0: style: The function 'ODGetSize' is never used. [unusedFunction]
+
+^
+tests/unit/object/basic/co_signed16/main.c:38:0: style: The function 'StubReset' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:429:0: style: The function 'TS_DisableAll' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:413:0: style: The function 'TS_DisableGroup' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:395:0: style: The function 'TS_DisableSuite' is never used. [unusedFunction]
+
+^
+tests/integration/app/app_env.c:467:0: style: The function 'TS_DomainCheck' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:421:0: style: The function 'TS_EnableGroup' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:404:0: style: The function 'TS_EnableSuite' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:355:0: style: The function 'TS_Fail' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_list.c:183:0: style: The function 'TS_ListContains' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_list.c:163:0: style: The function 'TS_ListFetchTail' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_list.c:73:0: style: The function 'TS_ListSetup' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_mem.c:46:0: style: The function 'TS_MemSetup' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:183:0: style: The function 'TS_PipeAdd' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:269:0: style: The function 'TS_PipeDelete' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:333:0: style: The function 'TS_PipeGetNum' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:347:0: style: The function 'TS_PipeGetSize' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:310:0: style: The function 'TS_PipeIsEmpty' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:289:0: style: The function 'TS_PipeIsExisting' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:372:0: style: The function 'TS_PipeMemUsed' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_pipe.c:177:0: style: The function 'TS_PipeSetup' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:375:0: style: The function 'TS_Skip' is never used. [unusedFunction]
+
+^
+tests/integration/testfrm/ts_env.c:327:0: style: The function 'TS_TestRun' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
